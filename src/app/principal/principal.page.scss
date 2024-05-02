@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.save-bt {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card {
+    display: inline-block;
+    margin: 5px 10px 5px 10px;
+}
+
+.grupos::-webkit-scrollbar {
+    display: none;
+
+}
+
+ion-content {
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+.grupos {
+    overflow: auto;
+    white-space: nowrap;
+  
+    .grupo1 {
+      display: inline-block;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+  
+      ion-avatar {
+        display: block;
+        margin: 0 auto;
+      }
+  
+      .item-label {
+        margin-top: 5px; /* Ajuste conforme necessário */
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+
+ion-card-header,
+ion-card-content {
+    padding: 5px 5px 5px 5px;
+}
+
+ion-button {
+    color: white;
+    --background: #DE7B87;
+    --background-activated: #b1616b;
+
+}
+
+ion-chip {
+    --background: #fff;
+    margin: 0 4px 0 4px;
+    padding: 0 5px 0 9px;
+}

@@ -1,0 +1,79 @@
+<ion-content [fullscreen]="true">
+  <div class="banner"></div>
+  <div class="prof-bg">
+    <div class="profile">
+
+      
+      <ion-grid>
+
+        <ion-row>
+          <ion-col>
+            
+          </ion-col>  
+        </ion-row>
+        <ion-row>
+          <ion-col> 
+
+          </ion-col>
+
+          <ion-col size="3">
+            <ion-button size="small">
+              Seguindo <ion-icon name="checkmark-circle" style="padding-left: 5px;"></ion-icon> 
+            </ion-button>
+          </ion-col>
+
+          <ion-col size="2">
+            <ion-button size="small">
+              <ion-icon slot="icon-only" ios="chatbubble" md="settings-sharp"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="icon-row">
+          <ion-col size="1"></ion-col>
+          <ion-col size="7"><span class="username">Val Cegs</span></ion-col>
+          <ion-col size="1" class="icon-col">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-col>
+          <ion-col size="1" class="icon-col">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-col>
+          <ion-col size="1" class="icon-col">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1"></ion-col>
+          <ion-col size="11"><span class="user">&#64;yunjincaptorr</span></ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </div>
+  <div class="profile-content">
+    <ion-segment class="ion-align-items-end" value="default" mode="md" swipe-gesture="true" >
+      <ion-segment-button value="inicio">
+        <ion-label>Principal </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="aguardando">
+        <ion-label>Compras </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="enviados">
+        <ion-label>Anúncios</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="feedback">
+        <ion-label>Feedback</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div class="profile-img">
+    <ion-avatar>
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+  </div>
+</ion-content>

@@ -1,0 +1,94 @@
+<ion-content>
+  <!--  
+  <div *ngIf="post">
+      <img *ngIf="post.imageUrl" [src]="post.imageUrl" style="width: 100%;" alt="Imagem do Post">
+  </div>
+  <div *ngIf="post">
+    <p><span [ngStyle]="{'color': getStatusColor(post.status) }">⬤ </span>{{ post.status }}</p>
+    <p>{{ post.title }} ⚬ {{ post.group }}</p>
+    <div class="preco" ><span style="font-size: 15px;">R$</span> {{ post.price }} <span style="font-size: 11px;">+ R$ {{post.shippingFee}} estimado em frete nacional</span></div>
+    <p>{{post.description}}</p>
+</div>
+-->
+<div *ngIf="post" style="position: relative; background-color: #F6F6F6; display: inline-block; width: 100%;">
+  <!-- Imagem do post -->
+  <img *ngIf="post.imageUrl" [src]="post.imageUrl" style="width: 100%;" alt="Imagem do Post">
+
+  <!-- Container para os ícones -->
+  <div class="img-bts">
+    <!-- Ícone à esquerda -->
+    <ion-button shape="round" (click)="goBack()" router-direction="back" class="back-bt">
+      <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+    </ion-button>
+    
+    <!-- Espaçamento entre ícones -->
+    <div style="flex-grow: 1;"></div>
+
+    <!-- Ícones à direita -->
+    <div class="icons-container">
+      <ion-button shape="round" class="back-bt">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+      <ion-button shape="round" class="back-bt">
+        <ion-icon slot="icon-only" name="chatbubble"></ion-icon>
+      </ion-button>
+      <ion-button shape="round" class="back-bt">
+        <ion-icon slot="icon-only" name="share-social"></ion-icon>
+      </ion-button>
+      <ion-button shape="round" class="back-bt">
+        <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+      </ion-button>
+      <!--
+      <ion-icon class="img-bt" name="notifications"></ion-icon>
+      <ion-icon class="img-bt" name="chatbubble"></ion-icon>
+      <ion-icon class="img-bt" name="share-social"></ion-icon>
+      <ion-icon class="img-bt" name="bookmark-outline"></ion-icon>
+    -->
+    </div>
+  </div>
+</div>
+
+
+  <ion-grid *ngIf="post">
+    <ion-row>
+      <ion-col size="3">
+        <span [ngStyle]="{'color': getStatusColor(post.status) }">⬤ </span>{{ post.status }}
+      </ion-col>
+      <ion-col>
+      </ion-col>
+      <ion-col style="font-size: 13px;" class="ion-align-items-center ion-justify-content-center">
+        <ion-icon class="icon" name="alert-circle" size="small" color="danger"></ion-icon> <span class="text">Ver regras da CEG</span>
+        
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        {{ post.title }} ⚬ {{ post.group }}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <span style="font-size: 15px;">R$</span> {{ post.price }} <span style="font-size: 11px;">+ R$
+          {{post.shippingFee}} estimado em frete nacional</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10">
+        <p>{{post.description}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="botoes ion-text-center">
+    <ion-button shape="round" size="default">Tenho interesse</ion-button>
+    <ion-button shape="round" size="large">
+      <ion-icon slot="icon-only" name="paper-plane" size="small"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

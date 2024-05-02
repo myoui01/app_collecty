@@ -1,0 +1,72 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      Página Principal
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar placeholder=></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-toolbar>
+  <div class="grupos">
+    <!-- Use *ngFor to loop through the groups array -->
+    <div *ngFor="let group of groups" class="grupo1">
+      <ion-avatar class="avatar-md">
+        <!-- Display the group's image -->
+        <img [src]="group.imageSrc" alt="{{ group.name }}">
+      </ion-avatar>
+      <!-- Display the group's name -->
+      <div class="item-label text-muted">{{ group.name }}</div>
+    </div>
+  </div>
+</ion-toolbar>
+
+  <ion-card style="width: 45%;" *ngFor="let post of posts">
+    <ion-card-header>
+      <ion-chip>
+        <ion-avatar>
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Seller's avatar" />
+        </ion-avatar>
+        <ion-label>{{ post.seller }}
+          <div style="display: flex;">
+            <p><span [ngStyle]="{ 'color': getStatusColor(post.status) }">⬤ </span>{{ post.status }}</p>
+          </div>
+        </ion-label>
+      </ion-chip>
+    </ion-card-header>
+    <div style="position: relative;">
+      <img [src]="post.imageUrl" alt="{{ post.title }}" />
+      <div class="save-bt">
+        <ion-icon name="bookmark-outline" style="color: white;" size="small"></ion-icon>
+      </div>
+    </div>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            {{ post.title }} ⚬ {{ post.group }}
+          </ion-col>
+        </ion-row>
+        <ion-row style="display: flex; align-items: end;">
+          <ion-col size="9">
+            <div class="preco" style="font-size: 22px;"><span style="font-size: 15px;">R$</span> {{ post.price }}</div>
+          </ion-col>
+          <ion-col size="3">
+            <ion-button (click)="verDetalhes(post.id)" class="details-bt" size="small" shape="round" color="">
+              <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>

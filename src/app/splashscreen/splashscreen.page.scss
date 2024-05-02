@@ -1,0 +1,13 @@
+.splash {
+    height: 100vh; // Define a altura da div como 100% da altura da tela
+    display: flex; // Para usar flexbox
+    justify-content: center; // Para centralizar horizontalmente
+    align-items: center; // Para centralizar verticalmente
+    background-color: #DE7B87;
+  
+    img {
+      height: 140px;
+      width: 140px;
+    }
+  }
+  
