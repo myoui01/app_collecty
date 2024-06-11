@@ -11,6 +11,13 @@
     background-color: #DE7B87;
     z-index: -1;
 
+    .img {
+        width: 110px;
+        margin-left: 15px;
+        margin-top: 10px;
+
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -49,6 +56,18 @@
     }
 }
 
+.imgimg {
+    background-color: #f4f4f4;
+    height: 100% ;
+    padding-bottom: 100px;
+
+    .img2 {
+        padding-left: 40px;
+        width: 400px;
+        padding-top: 30px;
+    }
+
+}
 
 .prof-bg {
     height: 17%;
@@ -59,6 +78,8 @@
 .profile {
     height: 100%;
     width: 100%;
+    margin-top: -25px;
+    padding-top: 20px;
     background-color: #fff;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -96,6 +117,7 @@
 }
 
 .icon-row {
+    margin-top: 11px;
     display: flex;
     align-items: center;
 }
@@ -103,6 +125,7 @@
 .icon-col {
     display: flex;
     justify-content: center;
+    gap: 1px;
 }
 
 ion-row {
@@ -118,7 +141,6 @@ ion-row {
 ion-button {
     --background: #DE7B87;
     --background-activated: #b1616b;
-
 }
 
 .profile-content {

@@ -20,6 +20,9 @@
     }
 }
 
+.card {
+    margin-top: -10px;
+}
 
 .login-bg {
     height: 70%;
@@ -36,15 +39,29 @@
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 2px;
     font-size: 30px;
+}
+
+ion-label {
+    font-size: 20px;
+}
+
+.copy {
+    margin-left: 15px;
 }
 
 h3 {
     color: #939fab;
     margin-top: 0.5px;
     font-size: 23px;
+}
+
+h4 {
+    margin-top: -0.1px;
+    font-size: 20px;
+    color: #323232;
 }
 
 .forgot-password-link {
@@ -54,6 +71,17 @@ h3 {
     text-align: right;
     font-size: 14px;
     color: #939fab;
+}
+
+.footer_pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 150px;
+    margin-top: 100px;
 }
 
 .btn_cadastro {

@@ -3,7 +3,28 @@
 * {
     font-family: "Quicksand", sans-serif;
 }
-
+ion-searchbar {
+    --background: #f7f7f8;
+    --border-radius: 10px;
+    --placeholder-color: #8e8e93;
+    --color: #000;
+    --icon-color: #8e8e93;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --padding-start: 10px;
+  }
+  
+  ion-searchbar .searchbar-input-container {
+    background-color: #ffffff;
+  }
+  
+  ion-searchbar .searchbar-clear-button {
+    color: #007aff;
+  }
+  
+  ion-searchbar .searchbar-search-icon {
+    color: #8e8e93;
+  }
+  
 .save-bt {
     position: absolute;
     bottom: 10px;

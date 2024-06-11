@@ -1,0 +1,131 @@
+<ion-header class="title-header">
+  <ion-toolbar color="primary">
+    <ion-title>Mensagens</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" id="popover">
+        <ion-icon style="width: 70%;" slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+ 
+  <ion-content color="light">
+
+  <ion-list>
+<!-- 
+    <ion-list-header class="ion-padding-bottom" color="light">
+     <p></p>
+    </ion-list-header> -->
+
+    <!-- <ion-item
+    *ngFor="let item of rooms" 
+    (click)="getChat(item)"
+    [detail]="true"> -->
+    <ion-item detail>
+      <ion-avatar slot="start">
+        <!-- <ion-img [src]="item?.photo" /> -->
+        <ion-img src="https://i.pravatar.cc/385"/>
+      </ion-avatar>
+      <ion-label>
+        Val Cegs
+        <p>
+          <ion-text>Mensagem</ion-text>
+        </p>
+      </ion-label>
+      <!-- <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label> -->
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar slot="start">
+        <!-- <ion-img [src]="item?.photo" /> -->
+        <ion-img src="https://i.pravatar.cc/185"/>
+      </ion-avatar>
+      <ion-label>
+        Pedro Padrão
+        <p>
+          <ion-text>Mensagem</ion-text>
+        </p>
+      </ion-label>
+      <!-- <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label> -->
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar slot="start">
+        <!-- <ion-img [src]="item?.photo" /> -->
+        <ion-img src="https://i.pravatar.cc/325"/>
+      </ion-avatar>
+      <ion-label>
+        Marina 
+        <p>
+          <ion-text>Mensagem</ion-text>
+        </p>
+      </ion-label>
+      <!-- <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label> -->
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar slot="start">
+        <!-- <ion-img [src]="item?.photo" /> -->
+        <ion-img src="https://i.pravatar.cc/315"/>
+      </ion-avatar>
+      <ion-label>
+        Gigi Gordey
+        <p>
+          <ion-text>Mensagem</ion-text>
+        </p>
+      </ion-label>
+      <!-- <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label> -->
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+    <ion-item detail>
+      <ion-avatar slot="start">
+        <!-- <ion-img [src]="item?.photo" /> -->
+        <ion-img src="https://i.pravatar.cc/285"/>
+      </ion-avatar>
+      <ion-label>
+        Lisa
+        <p>
+          <ion-text>Mensagem</ion-text>
+        </p>
+      </ion-label>
+      <!-- <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label> -->
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+
+  </ion-list>
+</ion-content> 

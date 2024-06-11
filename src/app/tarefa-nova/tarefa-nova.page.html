@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title>Criar nova CEG</ion-title>
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/tabs']" routerDirection="back">
+          <ion-icon slot="start" name="close" size="larger" class="ion-padding">
+          </ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card class="ion-align-self-center">
+      <ion-item>
+        <ion-textarea aria-label="CEG" [(ngModel)]="tarefa.title" placeholder="Nome da CEG"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-textarea aria-label="Desc" [(ngModel)]="tarefa.description" placeholder="Descrição"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-textarea aria-label="Desc" [(ngModel)]="tarefa.seller" placeholder="Seller"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-textarea aria-label="Desc" [(ngModel)]="tarefa.price" placeholder="Preço"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-textarea aria-label="Desc" [(ngModel)]="tarefa.shippingFee" placeholder="Taxa"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Grupo</ion-label>
+        <ion-select placeholder="Grupo" aria-label="grupo" [(ngModel)]="tarefa.group">
+          <ion-select-option value="aespa" selected>AESPA</ion-select-option>
+          <ion-select-option value="twice">TWICE</ion-select-option>
+          <ion-select-option value="bts">BTS</ion-select-option>
+          <ion-select-option value="aespa" selected>TXT</ion-select-option>
+          <ion-select-option value="twice">LE SSERAFIM</ion-select-option>
+          <ion-select-option value="bts">NEW JEANS</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <!-- <ion-icon name="pricetag-outline" slot="start"></ion-icon> -->
+        <ion-label> Status </ion-label>
+        <span>{{categoriaSelecionada}}</span>
+      </ion-item>
+      <ion-item>
+  
+        <ion-button size="small" shape="round" [fill]="(categoriaIndice === i)? 'solid' : 'outline'"
+          [color]="(categoriaIndice === i)? 'primary': 'secondary'" *ngFor="let tag of categorias; let i = index"
+          (click)="selecionarCategoria(i)">
+          <ion-label class="ion-wrap">{{tag}}</ion-label>
+        </ion-button>
+      </ion-item>
+      <ion-button class="ion-margin" expand="block" (click)="salvar()">Adicionar
+        tarefa</ion-button>
+    </ion-card>
+  </ion-content>

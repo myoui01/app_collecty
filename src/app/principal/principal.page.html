@@ -29,7 +29,7 @@
     <ion-card-header>
       <ion-chip>
         <ion-avatar>
-          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Seller's avatar" />
+          <img src="https://i.imgur.com/60qQRZ1.jpeg" alt="Seller's avatar" />
         </ion-avatar>
         <ion-label>{{ post.seller }}
           <div style="display: flex;">
@@ -63,10 +63,12 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-    </ion-card-content>
+    </ion-card-content>    
   </ion-card>
-
-
-
-
 </ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button [routerLink]="['/tarefa-nova']" routerDirection="forward">
+    <ion-icon name="add" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>

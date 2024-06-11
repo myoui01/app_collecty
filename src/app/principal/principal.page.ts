@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
 })
-export class PrincipalPage{
+export class PrincipalPage{ 
   groups: KpopGroup[] = kpopGroups;
   posts: Post[] = posts;
   constructor(private router: Router) { }
@@ -19,7 +19,7 @@ export class PrincipalPage{
     } else if (status === 'Pendente') {
       return 'orange'; // Yellow color for pending status
     } else {
-      return 'gray'; // Default color for other statuses
+      return 'gray'; // Default color for other status
     }
   }
 

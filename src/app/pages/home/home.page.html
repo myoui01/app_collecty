@@ -1,0 +1,34 @@
+<ion-header class="title-header">
+  <ion-toolbar color="primary">
+    <ion-title>Mensagens</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" id="popover">
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content color="light">
+
+  <ion-list *ngIf="segment === 'chats' && (chatRooms) as rooms">
+
+    <ion-item
+    *ngFor="let item of rooms" 
+    (click)="getChat(item)"
+    [detail]="true">
+      <ion-avatar slot="start">
+        <ion-img [src]="item?.photo" />
+      </ion-avatar>
+      <ion-label>
+        {{item?.name}}
+        <p>
+          <ion-text>
+            message
+          </ion-text>
+        </p>
+      </ion-label>
+      <ion-text slot="end" color="medium">10:00 AM</ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>

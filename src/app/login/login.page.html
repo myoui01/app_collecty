@@ -8,16 +8,20 @@
       <div class="card">
         <div style="padding: 5px; margin: 0 40px 0 40px;">
 
-          <h1>Bem vindo,</h1>
-          <h3>Faça o login para continuar!</h3>
+          <div class="copy">
+            <h1>Bem vindo,</h1>
+            <h4>Faça o login para continuar!</h4>
+          </div>
 
           <form class="form">
             <ion-item lines="full" class="ion-margin-bottom">
-              <ion-input type="email" placeholder="Email"></ion-input>
+              <h5 position="floating">Email</h5>
+              <ion-input type="email" placeholder=""></ion-input>
             </ion-item>
 
             <ion-item lines="full" class="ion-margin-bottom">
-              <ion-input type="password" placeholder="Senha"></ion-input>
+              <h5 position="floating">Senha</h5>
+              <ion-input type="password" placeholder=""></ion-input>
             </ion-item>
             <a routerLink="#" class="forgot-password-link">Esqueceu a senha?</a>
 
@@ -26,10 +30,11 @@
             <div class="btns">
               <ion-button routerLink="/tabs" expand="block" class="btn_login">Entrar</ion-button>
 
-              <ion-button type="button" expand="block" class="btn_cadastro">Criar conta</ion-button>
+              <ion-button routerLink="/forms" type="button" expand="block" class="btn_cadastro">Criar conta</ion-button>
             </div>
           </form>
-
+          <div class="footer_pai"><img class="footer" src="https://i.imgur.com/lkbijY5.png" alt="">
+          </div> 
         </div>
       </div>
     </div>
